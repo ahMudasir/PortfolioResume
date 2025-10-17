@@ -43,3 +43,12 @@ I am an aspiring Full Stack Developer with a strong foundation in **Frontend Dev
 ---
 
 *This portfolio showcases my skills, projects, and readiness for internships or entry-level roles in Full Stack Development.*
+
+git commands :
+
+git init
+ git remote add origin link
+ git remote -v
+ git branch
+ git branch -M main (ro rename branch)
+ git push origin main
