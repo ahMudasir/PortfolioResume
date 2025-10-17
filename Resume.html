@@ -1,112 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Resume.css">
-</head>
-<body>
-    <!--
-Simple single-file portfolio for Mudasir Ahmad.
-Save as index.html and open in a browser. Minimal, clean, print-friendly.
--->
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Full Stack Developer Portfolio</title>
+                <link rel="stylesheet" href="Resume.css">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            </head>
+            <body>
+                <header>
+                    <div class="header-content">
+                        <h1>MUDASIR FAROOQ</h1>
+                        <p>Full Stack Developer</p>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mudasir Farooq — Portfolio</title>
-</head>
-<body>
-  <div class="wrap">
-    <header class="header">
-      <div class="photo">MA</div>
-      <div>
-        <h1>Mudasir Farooq</h1>
-        <p class="lead">Full Stack Developer • Java | JavaScript | Node.js | HTML/CSS | MYSQL</p>
-        <div class="small">Phone: +91 99066 45204 • Email: <a class="link" href="mailto:mhdsaqib127@gmail.com">mhdsaqib127@gmail.com</a></div>
-      </div>
-    </header>
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I’m a dedicated Full Stack Developer skilled in Java, JavaScript, Node.js, HTML, CSS, and SQL. I enjoy building clean, responsive web applications and solving real-world problems through code. I’m passionate about learning new technologies and improving my development skills every day. My focus is on writing efficient, maintainable, and user-friendly software.
+                    </p>
+                </section>
 
-    <div class="grid">
-      <main>
-        <section class="card section">
-          <h2 style="margin:0 0 8px">About</h2>
-          <p class="small">Enthusiastic Full Stack Developer with hands-on experience building responsive front-ends and console-based Java applications. Strong fundamentals in data structures and object-oriented programming. Comfortable working with Git and deploying small projects to Netlify/GitHub Pages.</p>
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>
+                            <strong>Fresher / Entry-Level Candidate</strong>
+                            <p>Actively seeking internships and entry-level opportunities in <strong>Frontend Development</strong> and <strong>DSA</strong>. Eager to apply programming skills in real-world projects and gain hands-on experience.</p>
+                        </li>
+                        <li>
+                            <strong>Relevant Projects & Learning</strong>
+                            <p>Completed multiple projects and exercises using <strong>HTML, CSS, JavaScript, Java, SQL, Node.js</strong> to build practical coding experience.</p>
+                        </li>
+                    </ul>
+                </section>
 
-          <div class="section">
-            <h3 style="margin:0 0 8px">Projects</h3>
-            <div class="project">
-              <strong>Library Management System (Java)</strong>
-              <div class="small">Console-based system for borrowing & returning books. <a class="link" href="https://github.com/ahMudasir/AccioJobJava_Project/blob/master/src/StudentLibraray.java" target="_blank">Code</a></div>
-            </div>
+                <section id="education">
+                    <h3>Education</h3>
+                    <table style="width:100%; border-collapse:collapse; font-size:14px;">
+                        <thead style="background:#f1f5f9; color:#222;">
+                            <tr>
+                                <th style="text-align:left; padding:8px;">Qualification</th>
+                                <th style="text-align:left; padding:8px;">Institution</th>
+                                <th style="text-align:left; padding:8px;">Year</th>
+                                <th style="text-align:left; padding:8px;">Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:8px;">Masters in Technology (Computer Science)</td>
+                                <td style="padding:8px;">Rayat Bahra University, Kharar, Punjab</td>
+                                <td style="padding:8px;">2022 – 2025</td>
+                                <td style="padding:8px;">80%</td>
+                            </tr>
+                            <tr style="background:#f9fafb;">
+                                <td style="padding:8px;">Bachelor of Technology (Computer Science)</td>
+                                <td style="padding:8px;">Ganpati Institute of Technology and Management (GITM), Haryana</td>
+                                <td style="padding:8px;">2017 – 2021</td>
+                                <td style="padding:8px;">75%</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;">Intermediate (Class XII)</td>
+                                <td style="padding:8px;">Govt. Higher Secondary School, Lolab</td>
+                                <td style="padding:8px;">2013 – 2016</td>
+                                <td style="padding:8px;">70%</td>
+                            </tr>
+                            <tr style="background:#f9fafb;">
+                                <td style="padding:8px;">Matriculation (Class X)</td>
+                                <td style="padding:8px;">Anwar Memorial High School, Lolab</td>
+                                <td style="padding:8px;">2012 – 2013</td>
+                                <td style="padding:8px;">63%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-            <div class="project">
-              <strong>Hotel Management System (Java)</strong>
-              <div class="small">Console-based hotel ordering & billing project using OOP. <a class="link" href="https://github.com/ahMudasir/VSCODEPRACTICE/blob/main/bin/JavaProject/HotelManagementPractice.java" target="_blank">Code</a></div>
-            </div>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:8px;">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Java, JDBC</li>
+                        <li>SQL, MySQL</li>
+                        <li>React.js (Basics)</li>
+                        <li>Git & GitHub</li>
+                        <li>RESTful APIs</li>
+                        <li>Responsive Web Design</li>
+                        <li>Problem Solving (DSA)</li>
+                    </ul>
+                </section>
 
-            <div class="project">
-              <strong>Converter (HTML/CSS/JS)</strong>
-              <div class="small">Binary/Decimal/Octal/Hex converter — demo: <a class="link" href="https://fabulous-semolina-4ac6fb.netlify.app/" target="_blank">Live</a></div>
-            </div>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:16px;">
+                        <li>
+                            <h3>Library Management System — Java</h3>
+                            <p><strong>September 2025</strong></p>
+                            <p>Developed a console-based system to manage book borrowing and returning using Java OOP concepts. Implemented a class-based structure with constructors, methods, and encapsulation for real-time updates. Designed a user-friendly, menu-driven interface for viewing, borrowing, and returning books.</p>
+                            <p><strong>Technologies:</strong> Java, OOP (Classes, Objects, Methods), Encapsulation</p>
+                            <a href="https://github.com/ahMudasir/AccioJobJava_Project/blob/master/src/StudentLibraray.java" target="_blank">View on GitHub</a>
+                        </li>
+                        <li>
+                            <h3>Hotel Management System — Java (OOP Project)</h3>
+                            <p><strong>September 2025</strong></p>
+                            <p>Designed and implemented a console-based hotel management system using Object-Oriented Programming principles. Features include dynamic menu display, order placement, billing, and checkout processing. Applied arrays and ArrayList for data handling, modular class design, and interactive user input via Scanner and loops.</p>
+                            <p><strong>Technologies:</strong> Java, OOP (Classes, Objects, Arrays, ArrayList), Loops</p>
+                            <a href="https://github.com/ahMudasir/VSCODEPRACTICE/blob/main/bin/JavaProject/HotelManagementPractice.java" target="_blank">View on GitHub</a>
+                        </li>
+                        <li>
+                            <h3>Converter — Web App</h3>
+                            <p><strong>December 2022</strong></p>
+                            <p>Created a simple converter tool that converts numbers between Binary, Decimal, Octal, and Hexadecimal systems. Features instant conversion and a responsive UI built with HTML, CSS, and JavaScript.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <a href="https://fabulous-semolina-4ac6fb.netlify.app/" target="_blank">View Demo</a>
+                        </li>
+                        <li>
+                            <h3>Meal Planner — Web App</h3>
+                            <p><strong>September 2022</strong></p>
+                            <p>Developed a recipe and meal plan generator to help users find meal ideas and plan weekly dinners. Focused on creating a clean, responsive interface for better usability.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <a href="https://magenta-speculoos-1cc981.netlify.app/" target="_blank">View Demo</a>
+                        </li>
+                    </ul>
+                </section>
 
-            <div class="project">
-              <strong>Meal Planner (HTML/CSS/JS)</strong>
-              <div class="small">Recipe and meal plan generator — demo: <a class="link" href="https://magenta-speculoos-1cc981.netlify.app/" target="_blank">Live</a></div>
-            </div>
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Email: ahmadmudasir547@gmail.com</p>
+                    <p>Phone : +91 9682575291</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/mudasir-farooq-7b692923a/">LinkedIn</a></p>
+                    <p>GitHub: <a href="https://github.com/ahMudasir">GitHub</a></p>
+                </section>
 
-          </div>
+                <footer>
+                    <p>&copy; 2025 Mudasir Farooq. All rights reserved.</p>
+                </footer>
 
-          <div class="section">
-            <h3 style="margin:0 0 8px">Education</h3>
-            <div class="small">M.Tech (Computer Science), Rayat Bahra University — 2022–2025 (Grade: 80%)</div>
-            <div class="small">B.Tech (Computer Science), Ganpati Institute of Technology and Management — 2017–2021 (Grade: 75%)</div>
-          </div>
-
-        </section>
-
-        <section class="card section">
-          <h3 style="margin:0 0 8px">Certifications & Extras</h3>
-          <div class="small">Full Stack Development — Newton School (March 2021). Completed 500+ DSA problems on GeeksforGeeks. Experience with MySQL and basic dev tooling.</div>
-        </section>
-      </main>
-
-      <aside>
-        <section class="card">
-          <h3 style="margin:0 0 8px">Skills</h3>
-          <div class="chips">
-            <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">HTML & CSS</span>
-            <span class="chip">MySQL</span>
-            <span class="chip">DSA</span>
-          </div>
-        </section>
-
-        <section class="card section">
-          <h3 style="margin:0 0 8px">Links</h3>
-          <div class="small"><a class="link" href="https://github.com/ahMudasir" target="_blank">GitHub</a></div>
-          <div class="small">Portfolio demos: Netlify links included in projects above.</div>
-        </section>
-
-        <section class="card section">
-          <h3 style="margin:0 0 8px">Other</h3>
-          <div class="small">Available for internships and entry-level roles. Strong foundation in algorithms and OOP.</div>
-        </section>
-      </aside>
-    </div>
-
-    <footer>
-      <div class="small">© <span id="yr"></span> Mudasir Farooq — Simple portfolio. <span style="color:var(--muted)"></span></div>
-    </footer>
-  </div>
-
-  <script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
-</body>
-</html>
-</body>
-</html>
+                <script src="Resume.js"></script>
+            </body>
+            </html>

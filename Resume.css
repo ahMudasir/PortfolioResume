@@ -1,29 +1,141 @@
-:root
-{
-    --bg:#f7f9fb;--card:#ffffff;--accent:#0b76ff;--muted:#556;--maxw:900px}
-    *{
-        box-sizing:border-box
-    }
-    body{
-        margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:#102;display:flex;justify-content:center;padding:24px}
-    .wrap{
-        width:100%;max-width:var(--maxw)}
-    .header{
-        display:flex;align-items:center;gap:16px;margin-bottom:18px}
-    .photo{
-        width:72px;height:72px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#36b37e);display:grid;place-items:center;color:white;font-weight:700}
-    h1{
-        margin:0;font-size:20px}
-    p.lead{margin:6px 0;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr 300px;gap:18px}
-    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
-    .section{margin-top:12px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{padding:6px 10px;border-radius:999px;background:#f1f5f9;font-size:13px;color:var(--muted)}
-    a.link{color:var(--accent);text-decoration:none}
-    .project{margin-bottom:10px}
-    .small{color:var(--muted);font-size:14px}
-    footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5; /* Soft light background */
+}
 
-    @media (max-width:780px){.grid{grid-template-columns:1fr}.header{flex-direction:row}}
-    @media print{body{background:white} .card{box-shadow:none}}
+/* Header */
+header {
+    background: linear-gradient(90deg, #0a3d62, #1e3799); /* Gradient for a modern look */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1e3799;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #e58e26; /* Attractive orange hover */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 50px 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    color: #0a3d62;
+    border-bottom: 3px solid #0a3d62;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 12px 0;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: #1e3799;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e58e26; /* Hover color matches nav hover */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #0a3d62;
+    color: white;
+    font-weight: 500;
+}
+
+/* Skills / Projects / Cards */
+.skills li, .projects li {
+    background-color: #f1f5f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills li:hover, .projects li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
